@@ -1,0 +1,52 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing...</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #333;
+            margin: 20px auto;
+            border-radius: 10px;
+            position: relative;
+        }
+        .progress {
+            width: 0;
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            transition: width 2s;
+        }
+    </style>
+</head>
+<body>
+<img src="logoo.png" alt="Mobile Legends Logo" style="width: 200px;">
+    <div class="container">
+        <h2>Processing Your Rewards...</h2>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const progress = document.getElementById("progress");
+            progress.style.width = "100%";
+            setTimeout(() => {
+                window.location.href = "success.html";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

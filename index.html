@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Rewards</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .value-section {
+            margin: 20px 0;
+        }
+        .value-section h2 {
+            font-size: 20px;
+        }
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+            color: #FFD700;
+            margin: 10px 0;
+        }
+        .button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+
+        /* Media Queries for Mobile Optimization */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            img {
+                width: 120px;
+            }
+            .button {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .value {
+                font-size: 26px;
+            }
+            .button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <img src="logo.png" alt="Mobile Legends Logo">
+        <h1>Welcome to Mobile Legends Rewards</h1>
+        <p>Claim your free diamonds and skins now!</p>
+
+        <!-- Diamonds and Coins Section -->
+        <div class="value-section">
+            <h2>Your Available Rewards</h2>
+            <p>Diamonds: <span class="value">500</span></p>
+            <p>Coins: <span class="value">3000</span></p>
+        </div>
+
+        <!-- Claim Button -->
+        <a href="login.html" class="button">Claim Now</a>
+    </div>
+
+    <!-- Copyright Footer -->
+    <footer>
+        <p>&copy; 2024 Official Mobile Legends. All rights reserved.</p>
+    </footer>
+</body>
+</html>
